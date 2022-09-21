@@ -82,5 +82,3 @@ println(X)
 
 X = jacobi(G, H, 100)
 println(X)
-
-
