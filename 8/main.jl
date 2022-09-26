@@ -36,3 +36,15 @@ println(r)
 x = [0; 0; 0]
 r = fixedpoint(x, g, erro)
 println(r)
+
+F(x) = [((6*x[1] - 2*x[2] + 2.71^x[3])-2);
+       (sin(x[1]) - x[2] + x[3]);
+        ((sin(x[1]) + 2*x[2] + 3*x[3]) -1)]
+
+J(x) =  [6 -2 x[3]*2.71^x[3];
+        cos(x[1]) -1 + 1;
+        cos(x[1]) + 2 + 3]
+
+x = [0; 0; 0]
+r = fixedpoint(x, g, erro)
+println(r)
