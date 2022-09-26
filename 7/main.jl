@@ -1,6 +1,6 @@
 using LinearAlgebra
 
-function fixedpoint(a,g, error)
+function fixedpoint(a,g, erro)
 x=g(a)
 while norm(x-a) > error
 a=x
